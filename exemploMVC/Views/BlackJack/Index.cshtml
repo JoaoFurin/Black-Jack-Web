@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "BlackJack";
+}
+
+<h1>BlackJack</h1>
+
+<br />
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>
+                Player 1
+            </h3>
+            <br />
+            <img alt="card1" src="/images/cardBack.png" height="350" width="250" name="cards1" id="cards1">
+            <br /><br />
+
+            <button type="button" class="btn btn-success" name="playOne" id="playOne" onclick="player1()">
+                Play
+            </button>
+
+            <button type="button" class="btn btn-success" name="stopOne" id="stopOne" onclick="stop1()">
+                Stop
+            </button>
+
+        </div>
+        <div class="col-md-4">
+            <h3>
+                Match
+            </h3>
+            <br />
+
+            <button type="button" class="btn btn-danger" name="restartGame" id="restartGame" onclick="location.reload()">
+                Restart
+            </button>
+
+            <br /><br />
+
+            <p>
+                <strong>Score:</strong>
+            </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="badge badge-default"><label id="score1"></label></span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default">X</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default"><label id="score2"></label></span>
+                </div>
+                <br /><br />
+                <div class="col-md-4">
+                    <span class="badge badge-default" id="result"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h3>
+                Player 2
+            </h3>
+
+            <br />
+            <img alt="card2" src="/images/cardBack.png" height="350" width="250" name="cards2" id="cards2">
+            <br /><br />
+
+            <button type="button" class="btn btn-success" name="playTwo" id="playTwo" onclick="player2()">
+                Play
+            </button>
+
+            <button type="button" class="btn btn-success" name="stopTwo" id="stopTwo" onclick="stop2()">
+                Stop
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<form class="container" id="formulario">
+    <div class="col-md-5">
+        <fieldset class="form-group">
+            <legend>Cálculo IMC</legend>
+
+            <label for="peso">Peso: </label>
+            <input type="text" name="peso" class="form-control" />
+
+            <label for="altura">Altura: </label>
+            <input type="text" name="altura" class="form-control" />
+
+            <label for="imc">IMC: </label>
+            <input type="text" name="imc" class="form-control" disabled="disabled"/>
+
+            <br />
+
+            <button type="button" class="btn btn-primary" onclick="calcularIMC()">Calcular IMC</button>
+
+
+        </fieldset>
+    </div>
+</form>
